@@ -1,0 +1,30 @@
+@media (max-aspect-ratio: 1/1) {
+  // MOBILE STYLES
+  .page-2 {
+    padding: 20px 0 40px 0;
+
+    & > h3 {
+      text-align: center;
+      font-size: 40pt;
+      margin: 40px 20px;
+    }
+
+    .details-row {
+      margin: 0 20px;
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: stretch;
+
+      .details-col {
+        & > h4 {
+          padding-left: 40px;
+        }
+      }
+    }
+
+    .summary {
+      font-size: 30pt;
+      margin: 20px;
+    }
+  }
+}

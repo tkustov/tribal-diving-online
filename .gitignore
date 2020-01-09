@@ -62,3 +62,5 @@ typings/
 
 # project dependent
 .vscode
+/index.html
+/assets

@@ -1,0 +1,17 @@
+@media (max-aspect-ratio: 1/1) {
+  // MOBILE STYLES
+  .page-4 {
+    .wrapper {
+      margin: 150px 0;
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+    }
+
+    .price {
+      margin-bottom: 50px;
+      font-size: 300px;
+      color: #66732f;
+    }
+  }
+}

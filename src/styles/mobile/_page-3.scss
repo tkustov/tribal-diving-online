@@ -1,54 +1,53 @@
-@media (max-aspect-ratio: 1/1) {
-  // MOBILE STYLES
-  .page-3 {
-    background: transparent url('../assets/bg-m-p3.min.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 125vw;
-    color: #fff;
+// MOBILE STYLES
+.page-3 {
+  background: transparent url("../assets/bg-m-p3.min.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 125vw;
+  color: #fff;
 
-    .contacts-list {
-      list-style: none;
-      padding: 50px 0 0 100px;
-      margin: 0;
+  .contacts-list {
+    list-style: none;
+    padding: 1em 0 0 2em;
+    margin: 0;
 
-      > li {
-        font-size: 45px;
-        margin-bottom: 20px;
+    > li {
+      font-size: 1.1em;
+      margin-bottom: 1em;
 
-        &.fb::before,
-        &.insta::before,
-        &.gmail::before {
-          content: '';
-          display: inline-block;
-          vertical-align: middle;
-          width: 65px;
-          height: 65px;
-          margin: 0 20px 0 -65px;
-        }
+      &.fb::before,
+      &.insta::before,
+      &.gmail::before {
+        content: "";
+        display: inline-block;
+        vertical-align: middle;
+        width: 1.2em;
+        height: 1.2em;
+        margin: 0 0.5em 0 -1.2em;
+      }
 
-        &.fb::before {
-          background: transparent url('../assets/icon-fb-w-128px-m.png') no-repeat;
-          background-size: contain;
-        }
+      &.fb::before {
+        background: transparent url("../assets/icon-fb-w-128px-m.png") no-repeat;
+        background-size: contain;
+      }
 
-        &.insta::before {
-          background: transparent url('../assets/icon-insta-w-128px-m.png') no-repeat;
-          background-size: contain;
-        }
+      &.insta::before {
+        background: transparent url("../assets/icon-insta-w-128px-m.png") no-repeat;
+        background-size: contain;
+      }
 
-        &.gmail::before {
-          background: transparent url('../assets/icon-gmail-w-128px-m.png') no-repeat;
-          background-size: contain;
-        }
+      &.gmail::before {
+        background: transparent url("../assets/icon-gmail-w-128px-m.png") no-repeat;
+        background-size: contain;
+      }
 
-        > a {
+      > a {
+        color: #fff;
+
+        &:focus,
+        &:hover {
           color: #fff;
-
-          &:focus, &:hover {
-            color: #fff;
-          }
         }
       }
     }

@@ -1,69 +1,70 @@
-@media (max-aspect-ratio: 1/1) {
-  // MOBILE STYLES
-  .page-1 {
-    background: transparent url('../assets/bg-m-p1.min.jpg') no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 125vw;
-    color: #fff;
+// MOBILE STYLES
+.page-1 {
+  background: transparent url("../assets/bg-m-p1.min.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100vw;
+  height: 125vw;
+  color: #fff;
 
-    .nav {
+  .nav {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    width: 100%;
+
+    .logo {
+      fill: #fff;
+      flex: 0 0 auto;
+      width: 25vw;
+      height: calc(30vw * 0.487);
+      margin: 2vw;
+    }
+
+    .menu {
+      margin-left: auto;
+      margin-right: 5vw;
+      list-style: none;
       display: flex;
       flex-flow: row nowrap;
-      align-items: center;
-      width: 100%;
+      padding: 0;
 
-      .logo {
-        fill: #fff;
-        flex: 0 1 auto;
-        width: 30vw;
-        height: calc(30vw * 0.487);
-        margin: 5vw;
-      }
+      .menuitem {
+        margin: 0 .5em;
+        text-align: center;
 
-      .menu {
-        margin-left: auto;
-        margin-right: 5vw;
-        list-style: none;
-        display: flex;
-        flex-flow: row nowrap;
-        padding: 0;
+        a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 1em;
 
-        .menuitem {
-          margin: 0 20px;
-
-          a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 30pt;
-
-            &:focus, &:hover {
-              text-decoration: underline;
-            }
+          &:focus,
+          &:hover {
+            text-decoration: underline;
           }
         }
       }
     }
+  }
 
-    .content {
-      text-align: center;
+  .content {
+    text-align: center;
 
-      h3 {
-        font-size: 50pt;
-      }
+    h3 {
+      font-size: 1.7em;
+    }
 
-      .buy-btn {
-        font-size: 40pt;
-        padding: 20px 40px;
-        border: solid 3px #fff;
-        border-radius: 15px;
+    .buy-btn {
+      font-size: 1.2em;
+      padding: 0.6em 1.2em;
+      border: solid .1em #fff;
+      border-radius: 0.4em;
+      color: #fff;
+      text-decoration: none;
+
+      &:hover,
+      &:focus {
         color: #fff;
-        text-decoration: none;
-
-        &:hover, &:focus {
-          color: #fff;
-        }
       }
     }
   }

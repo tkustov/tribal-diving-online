@@ -1,17 +1,21 @@
-@media (max-aspect-ratio: 1/1) {
-  // MOBILE STYLES
-  .page-4 {
-    .wrapper {
-      margin: 150px 0;
-      display: flex;
-      flex-flow: column nowrap;
-      align-items: center;
-    }
+// MOBILE STYLES
+.page-4 {
+  .wrapper {
+    margin: 15vw 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
 
-    .price {
-      margin-bottom: 50px;
-      font-size: 250px;
-      color: #66732f;
-    }
+  .price {
+    margin-bottom: 0.25em;
+    font-size: 8em;
+    color: #66732f;
+  }
+
+  .disclaimer {
+    padding: 1.5em;
+    font-size: 1.1em;
+    text-align: center;
   }
 }

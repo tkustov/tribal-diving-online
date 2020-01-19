@@ -4,6 +4,8 @@
 <head>
   <title>Tribal Diving Online. Course 1</title>
   <base href="/" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, maximum-scale=1.0" />
 </head>
 
 <body>
@@ -14,6 +16,7 @@
         <menu class="menu">
           <li class="menuitem"><a href="#details">Детали</a></li>
           <li class="menuitem"><a href="#contacts">Контакты</a></li>
+          <li class="menuitem"><a href="#terms-of-use">Правила и условия</a></li>
         </menu>
       </nav>
       <div class="content">
@@ -35,6 +38,7 @@
             <li>стретчинг, а именно подготовка к поперечному и продольному шпагату</li>
           </ul>
         </div>
+        <div class="col-gutter"></div>
         <div class="details-col">
           <h4>9 танцевальных уроков:</h4>
           <ul class="details-list">
@@ -72,9 +76,102 @@
             onmouseover="this.style.opacity='0.8';" onmouseout="this.style.opacity='1';"><span
               style="font-family:Verdana,Arial,sans-serif!important;font-weight:bold!important;font-size:14px!important;color:#ffffff!important;line-height:18px!important;vertical-align:middle!important;">Купить</span></button>
         </div>
+        <div class="disclaimer">
+          Нажимая кнопку "Купить" вы соглашаетесь с <a href="#terms-of-use">Правилами и условиями</a>
+        </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="company-info">
+        <p class="company-requisites">
+          ФОП &laquo;Лєбєдєва К.В.&raquo;<br />
+          ІНН 3339416524
+        </p>
+        <address>
+          <a href="mailto:tribal.diving.online@gmail.com">tribal.diving.online@gmail.com</a>
+          <!-- <a href="tel:"></a> -->
+        </address>
+      </div>
+      <div class="sitemap">
+        <menu class="menu">
+          <li class="menuitem"><a href="#details">Детали</a></li>
+          <li class="menuitem"><a href="#contacts">Контакты</a></li>
+          <li class="menuitem"><a href="#terms-of-use">Правила и условия</a></li>
+        </menu>
+      </div>
+      <div class="social">
+        <x-svg src="./assets/tdo-logo.svg" class="logo"></x-svg>
+      </div>
+      <div class="copyright">
+        Copyright&nbsp;2020&nbsp;PE&nbsp;Kira&nbsp;Lebedeva.
+        All&nbsp;rights&nbsp;reserved.
+      </div>
+    </footer>
   </article>
+
+  <!-- Terms Of Use -->
+  <div id="terms-of-use" class="modal">
+    <a href="#" class="modal-backdrop"></a>
+    <div class="modal-window">
+      <header class="modal-header">
+        <h2>Правила использования</h2>
+        <a href="#" class="btn-close-x">&times;</a>
+      </header>
+      <div class="modal-body">
+        <div>
+          <h3>Покупка:</h3>
+          <ul>
+            <li>
+              <p>После оплаты курса, в течении 24 часов, на адрес электронной почты (указанный при оплате)
+                будет отправлена ссылка для просмотра/скачивания курса;</p>
+            </li>
+            <li>
+              <p>Оплата курса осуществляется при помощи системы приема платежей
+                <a href="https://wayforpay.com" target="_blank">WayForPay</a>.</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Возврат средств:</h3>
+          <ul>
+            <li>
+              Формат распространения видеокурса (в виде ссылки для просмотра/скачивания,
+              без физического носителя) не предполагает возврата средств.
+            </li>
+            <li>
+              <p>
+                Возврат средств возможен, в случае нештатных ситуаций:
+                случайная оплата (до получения ссылки), случайная повторная оплата.
+                В таких ситуциях просим Вас обратиться в поддержку:
+              </p>
+              <ul>
+                <li>Email: <a href="mailto:tribal.diving.online@gmail.com">tribal.diving.online@gmail.com</a></li>
+                <li>Личное сообщение в Instagram <a href="https://www.instagram.com/tribal.diving.online/"
+                    target="_blank">@tribal.diving.online</a></li>
+                <li>Личное сообщение в Facebook <a href="https://fb.com/tribal.diving.online"
+                    target="_blank">fb.com/tribal.diving.online</a></li>
+              </ul>
+              <p>Запросы будут обработаны в течении 24 часов.</p>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3>Условия использования:</h3>
+          <ul>
+            <li>
+              <p>Данный видеокурс предназначен исключительно для личного использования;</p>
+            </li>
+            <li>
+              <p>Дальнейшее распространение видеокурса запрещено в любом виде.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <footer class="modal-footer">
+        <a href="#" class="btn">Закрыть</a>
+      </footer>
+    </div>
+  </div>
 </body>
 
 </html>

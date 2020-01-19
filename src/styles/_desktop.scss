@@ -1,10 +1,13 @@
-@media (min-aspect-ratio: 5/4) {
+@import './variables';
+
+@media (min-width: $desktop-breakpoint) {
   .root {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
       'page1 page1 page1'
-      'page2 page3 page4';
+      'page2 page3 page4'
+      'footer footer footer';
     width: 100%;
 
     .page-1 {
@@ -65,7 +68,7 @@
           font-size: 14pt;
           padding: 10px 20px;
           border: solid 2px #fff;
-          border-radius: 10px;
+          border-radius: 5px;
           color: #fff;
           text-decoration: none;
 
@@ -136,6 +139,7 @@
 
     .page-4 {
       grid-area: page4;
+
       .wrapper {
         margin: 150px 0;
         display: flex;
@@ -149,6 +153,10 @@
         color: #66732f;
       }
 
+      .disclaimer {
+        padding: 20px;
+        text-align: center;
+      }
     }
   }
 }

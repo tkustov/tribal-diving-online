@@ -1,0 +1,79 @@
+.root .footer {
+  grid-area: footer;
+  background: transparent url("../assets/footer-bg.min.jpg") no-repeat;
+  background-size: cover;
+  color: white;
+  display: grid;
+
+  @media (max-width: $mobile-breakpoint) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "company-info"
+      "sitemap"
+      "social"
+      "copyright";
+  }
+
+  @media (min-width: $desktop-breakpoint) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "company-info sitemap social"
+      "copyright copyright copyright";
+  }
+
+  .company-info {
+    grid-area: company-info;
+    padding: 1em;
+
+    .company-requisites {
+      margin-top: 0;
+    }
+
+    address a {
+      color: white;
+    }
+  }
+
+  .sitemap {
+    grid-area: sitemap;
+    padding: 1em;
+
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      font-size: 1em;
+
+      .menuitem {
+        > a {
+          color: white;
+          text-decoration: none;
+
+          &:hover,
+          &:focus {
+            color: white;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .social {
+    grid-area: social;
+    padding: 1em;
+    text-align: center;
+
+    .logo {
+      fill: white;
+      max-width: 40%;
+      margin: 0 auto;
+    }
+  }
+
+  .copyright {
+    grid-area: copyright;
+    padding: 1em;
+    text-align: center;
+  }
+}

@@ -1,0 +1,56 @@
+.footer {
+  color: #fff;
+  background: transparent url('/assets/footer-bg.min.jpg') no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas:
+    'company-info langs logo'
+    'copyright copyright copyright';
+}
+
+.companyData,
+.langs,
+.logoSection {
+  padding: 1em;
+}
+
+.companyData {
+  grid-area: company-info;
+  text-align: left;
+
+  address a {
+    color: #fff;
+    text-decoration: none;
+
+    &:focus,
+    &:hover {
+      text-decoration: underline;
+      color: #fff;
+    }
+
+    &:visited,
+    &:active {
+      color: #fff;
+      opacity: .9;
+    }
+  }
+}
+
+.langs {
+  grid-area: langs;
+}
+
+.logoSection {
+  grid-area: logo;
+
+  .logo {
+    max-width: 150px;
+    fill: #fff;
+  }
+}
+
+.copyright {
+  grid-area: copyright;
+  text-align: center;
+}

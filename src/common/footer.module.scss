@@ -1,25 +1,28 @@
+@import "../variables";
+
 .footer {
   color: #fff;
-  background: transparent url('/assets/footer-bg.min.jpg') no-repeat;
+  background: transparent url("/assets/footer-bg.min.jpg") no-repeat;
   background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-areas:
-    'company-info langs logo'
-    'copyright copyright copyright';
-}
 
-.companyData,
-.langs,
-.logoSection {
-  padding: 1em;
-}
+  @media (max-width: $mobileBreakpoint) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "company-info"
+      "langs"
+      "sitemap"
+      "copyright";
+  }
 
-.companyData {
-  grid-area: company-info;
-  text-align: left;
+  @media (min-width: $desktopBreakpoint) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "company-info langs sitemap"
+      "copyright copyright copyright";
+  }
 
-  address a {
+  a {
     color: #fff;
     text-decoration: none;
 
@@ -32,25 +35,41 @@
     &:visited,
     &:active {
       color: #fff;
-      opacity: .9;
+      opacity: 0.9;
     }
   }
+}
+
+.companyData,
+.langs,
+.sitemap {
+  padding: 1em;
+}
+
+.companyData {
+  grid-area: company-info;
+  text-align: left;
 }
 
 .langs {
   grid-area: langs;
 }
 
-.logoSection {
-  grid-area: logo;
+.sitemap {
+  grid-area: sitemap;
 
-  .logo {
-    max-width: 150px;
-    fill: #fff;
+  > h5 {
+    margin: 0 0 0.5em 0;
   }
 }
 
 .copyright {
   grid-area: copyright;
   text-align: center;
+  padding-bottom: 1em;
+
+  :global(.nowrap) {
+    white-space: nowrap;
+    word-break: keep-all;
+  }
 }

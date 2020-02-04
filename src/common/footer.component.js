@@ -1,15 +1,17 @@
-import React, { memo } from 'react';
+import React, { memo, forwardRef } from 'react';
 import { useTranslation } from 'react-i18next';
-import { SvgInline } from './svg-inline.component';
+import cn from 'classnames';
+
 import { LangSelector } from './lang-selector.component';
+import { Sitemap } from './sitemap.component';
 
 import styles from './footer.module.scss';
 
-export const Footer = memo(() => {
+export const Footer = memo(forwardRef((props, ref) => {
   const { t } = useTranslation();
   const dt = new Date();
   return (
-    <footer className={styles.footer}>
+    <footer ref={ref} className={cn(styles.footer, props.className)}>
       <div className={styles.companyData}>
         <div>
           {t('footer.companyName')}<br />
@@ -20,17 +22,24 @@ export const Footer = memo(() => {
           <a href="tel:+380934876382">+380934876382</a>
         </address>
       </div>
+      <div className={styles.sitemap}>
+        <h5>{t('footer.sitemapTitle')}</h5>
+        <Sitemap />
+      </div>
       <div className={styles.langs}>
         <LangSelector />
       </div>
-      <div className={styles.logoSection}>
-        <SvgInline className={styles.logo} src="/assets/tdo-logo.svg" />
-      </div>
       <div className={styles.copyright}>
-        2019&ndash;{dt.getFullYear()}&nbsp;&copy;&nbsp;{t('footer.companyName')}.
+        <span className="nowrap">
+          2019&ndash;{dt.getFullYear()}
+          {' '}&copy;{' '}
+          {t('footer.companyName')}.
+        </span>
         {' '}
-        {t('footer.allRightsReserved')}.
+        <span className="nowrap">
+          {t('footer.allRightsReserved')}.
+        </span>
       </div>
     </footer>
   );
-});
+}));

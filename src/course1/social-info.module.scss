@@ -1,0 +1,15 @@
+@import "../variables";
+
+.container {
+  background: var(--brand-color) no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media (max-width: $mobileBreakpoint) {
+    background-image: url("/assets/bg-m-p3.min.jpg");
+  }
+
+  @media (min-width: $desktopBreakpoint) {
+    background-image: url("/assets/bg-d-p3.min.jpg");
+  }
+}

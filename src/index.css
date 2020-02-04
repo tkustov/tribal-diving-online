@@ -11,3 +11,12 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+body {
+  min-height: 100vh;
+}
+
+:root {
+  --brand-color: #5f6f2b;
+  --brand-color-alter: #748b40;
+}

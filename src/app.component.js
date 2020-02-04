@@ -12,16 +12,15 @@ import styles from './app.module.scss';
 
 function App() {
   return (
-    <div className={styles.App}>
-      <Router>
-        <Switch>
-          <Route exact path="/course1" component={Course1} />
-          <Route exact path="/">
-            <Redirect to="/course1" />
-          </Route>
-        </Switch>
-      </Router>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/course1/:section" component={Course1} />
+        <Route path="/course1" component={Course1} />
+        <Route render={() => (
+          <Redirect to="/course1" />
+        )}/>
+      </Switch>
+    </Router>
   );
 }
 

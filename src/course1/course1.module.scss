@@ -1,0 +1,43 @@
+@import "../variables";
+
+.article {
+  display: grid;
+
+  @media (max-width: $mobileBreakpoint) {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      'header'
+      'details'
+      'contacts'
+      'buy'
+      'footer';
+  }
+
+  @media (min-width: $desktopBreakpoint) {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+      "header header header"
+      "details contacts buy"
+      "footer footer footer";
+  }
+}
+
+.header {
+  grid-area: header;
+}
+
+.details {
+  grid-area: details;
+}
+
+.socialInfo {
+  grid-area: contacts;
+}
+
+.buyCourse {
+  grid-area: buy;
+}
+
+.footer {
+  grid-area: footer;
+}

@@ -1,0 +1,33 @@
+.container {
+  color: #fff;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.productName {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.buyBtn {
+  --fg-color: #fff;
+  display: inline-block;
+  color: var(--fg-color);
+  text-decoration: none;
+  border: solid 0.1em var(--fg-color);
+  padding: 0.3em 1.2em 0.6em 1.2em;
+  border-radius: 0.25em;
+  margin-top: 0.5em;
+
+  &:focus,
+  &:hover {
+    color: var(--fg-color);
+  }
+
+  &:active,
+  &:visited {
+    color: var(--fg-color);
+    opacity: 0.8;
+  }
+}

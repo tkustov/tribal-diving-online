@@ -5,6 +5,10 @@ export default {
     "allRightsReserved": "Всі права застережено"
   },
   "course1": {
+    "headline": {
+      "productName": "Tribal Diving Online. Курс №1",
+      "buyBtnTitle": "Придбати"
+    },
     "buy": {
       "buyBtnTitle": "Придбати",
       "invoiceUri": "https://secure.wayforpay.com/button/ba05f9941563f",

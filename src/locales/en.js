@@ -56,6 +56,10 @@ export default {
     ]
   },
   "course1": {
+    "headline": {
+      "productName": "Tribal Diving Online. Course 1",
+      "buyBtnTitle": "Buy"
+    },
     "details": {
       "pageTitle": "Course content",
       "warmupTitle": "3 warmup videos",

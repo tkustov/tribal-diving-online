@@ -1,0 +1,70 @@
+@import "../variables";
+
+.container {
+  background: var(--brand-color) no-repeat;
+  background-image: url('/assets/footer-bg.min.jpg');
+  background-size: cover;
+  background-position: top center;
+  padding: 1em;
+  display: grid;
+  align-items: center;
+  
+  @media (max-width: $mobileBreakpoint) {
+    grid-template-areas:
+      "logo langs"
+      "nav nav";
+  }
+
+  @media (min-width: $desktopBreakpoint) {
+    grid-template-columns: min-content auto min-content;
+    grid-template-areas:
+      "logo nav langs";
+  }
+}
+
+.logo {
+  grid-area: logo;
+  fill: #fff;
+
+  @media (max-width: $mobileBreakpoint) {
+    max-width: 30vw;
+    margin: 1em auto;
+  }
+
+  @media (min-width: $desktopBreakpoint) {
+    min-width: 10vw;
+    max-width: 15vw;
+  }
+}
+
+.langSelector {
+  grid-area: langs;
+  color: #fff;
+}
+
+.nav {
+  grid-area: nav;
+  justify-self: center;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+
+  & > li {
+    margin: 0.5em;
+  }
+
+  a {
+    color: #fff;
+    text-transform: none;
+
+    &:focus,
+    &:hover {
+      color: #fff;
+      text-transform: underline;
+    }
+  }
+}

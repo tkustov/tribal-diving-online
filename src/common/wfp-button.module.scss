@@ -1,0 +1,19 @@
+.button {
+  display: inline-block;
+  background: #2b3160
+    url("https://s3.eu-central-1.amazonaws.com/w4p-merch/button/bg6x2.png")
+    no-repeat center right;
+  background-size: cover;
+  width: 256px;
+  height: 54px;
+  border: none;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 3px 2px 8px rgba(71, 66, 66, 0.22);
+  text-align: left;
+  box-sizing: border-box;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}

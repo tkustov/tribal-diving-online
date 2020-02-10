@@ -6,11 +6,11 @@
   @media (max-width: $mobileBreakpoint) {
     grid-template-columns: 1fr;
     grid-template-areas:
-      'header'
-      'details'
-      'contacts'
-      'buy'
-      'footer';
+      "header"
+      "details"
+      "contacts"
+      "buy"
+      "footer";
   }
 
   @media (min-width: $desktopBreakpoint) {
@@ -22,8 +22,20 @@
   }
 }
 
-.header {
+.headerContainer {
   grid-area: header;
+  background: var(--brand-color) no-repeat;
+  background-size: cover;
+
+  @media (max-width: $mobileBreakpoint) {
+    background-image: url("/assets/bg-m-p1.min.jpg");
+    height: 125vw;
+  }
+
+  @media (min-width: $desktopBreakpoint) {
+    background-image: url("/assets/bg-d-p1.min.jpg");
+    height: 56.25vw;
+  }
 }
 
 .details {
@@ -40,4 +52,12 @@
 
 .footer {
   grid-area: footer;
+}
+
+.header {
+  background: transparent;
+
+  @media (min-width: $desktopBreakpoint) {
+    max-width: 75vw;
+  }
 }

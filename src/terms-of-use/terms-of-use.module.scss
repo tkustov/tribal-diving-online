@@ -1,0 +1,41 @@
+@import "../variables";
+
+.wrapper {
+  //
+}
+
+.container {
+  color: #444;
+  max-width: 85vw;
+  margin: 1em auto 5em auto;
+}
+
+.pageTitle {
+  font-size: 2em;
+  margin-top: 0;
+}
+
+.section {
+  margin-bottom: 2em;
+}
+
+.sectionTitle {
+  font-size: 1.2em;
+}
+
+.sectionItem {
+  margin-bottom: 1em;
+  position: relative;
+
+  &::before {
+    content: "\00b6";
+    position: absolute;
+    left: -0.8em;
+    color: #ababab;
+  }
+
+  p,
+  ul {
+    margin: 0 0 0.5em 0;
+  }
+}

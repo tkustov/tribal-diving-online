@@ -1,5 +1,7 @@
 import React, { Fragment, memo, useCallback } from 'react';
 import { useTranslation } from 'react-i18next';
+import cn from "classnames";
+
 import { locales } from '../locales';
 
 import styles from './lang-selector.module.scss';
@@ -21,7 +23,7 @@ export const LangSelector = memo((props) => {
   }));
 
   return (
-    <form className={styles.radioForm}>
+    <form className={cn(styles.radioForm, props.className)}>
       {radios}
     </form>
   );

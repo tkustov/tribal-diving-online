@@ -1,6 +1,6 @@
-import en from './en.json';
-import ru from './ru.json';
-import ua from './ua.json';
+import en from './en';
+import ru from './ru';
+import ua from './ua';
 
 export const locales = [
   {

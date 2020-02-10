@@ -1,7 +1,7 @@
 import React, { memo, useRef, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { Header } from '../common/header.component';
 import { Footer } from '../common/footer.component';
-import { Header } from './header.component';
 import { Details } from './details.component';
 import { SocialInfo } from './social-info.component';
 import { BuyCourse } from './buy-course.component';
@@ -30,7 +30,9 @@ export const Course1 = memo(() => {
 
   return (
     <article className={styles.article}>
-      <Header className={styles.header} />
+      <header className={styles.headerContainer}>
+        <Header className={styles.header} />
+      </header>
       <Details
         ref={detailsRef}
         className={styles.details} />

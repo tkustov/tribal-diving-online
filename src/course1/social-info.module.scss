@@ -7,9 +7,50 @@
 
   @media (max-width: $mobileBreakpoint) {
     background-image: url("/assets/bg-m-p3.min.jpg");
+    height: 125vw;
   }
 
   @media (min-width: $desktopBreakpoint) {
     background-image: url("/assets/bg-d-p3.min.jpg");
+    min-height: 42vw;
+  }
+}
+
+.contactsList {
+  list-style: none;
+  padding: 1em 0 0 2em;
+  margin: 0;
+
+  & > li > a {
+    color: #fff;
+
+    &:focus,
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  :global(.fb)::before,
+  :global(.insta)::before,
+  :global(.gmail)::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 1.2em;
+    height: 1.2em;
+    margin: 0 0.5em 0 -1.2em;
+    background-size: contain;
+  }
+
+  :global(.fb)::before {
+    background-image: url("/assets/icon-fb-w-128px-m.png");
+  }
+
+  :global(.insta)::before {
+    background-image: url("/assets/icon-insta-w-128px-m.png");
+  }
+
+  :global(.gmail)::before {
+    background-image: url("/assets/icon-gmail-w-128px-m.png");
   }
 }

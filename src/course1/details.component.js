@@ -2,6 +2,8 @@ import React, { memo, forwardRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import cn from 'classnames';
 
+import styles from './details.module.scss';
+
 export const Details = memo(forwardRef((props, ref) => {
   const { t } = useTranslation();
 
@@ -17,9 +19,11 @@ export const Details = memo(forwardRef((props, ref) => {
 
   return (
     <div
-      className={cn(props.className)}
+      className={cn(styles.container, props.className)}
       ref={ref}>
-      <h3>{t('course1.details.pageTitle')}</h3>
+      <h3 className={styles.sectionTitle}>
+        {t('course1.details.pageTitle')}
+      </h3>
       <div>
         <h4>{t('course1.details.warmupTitle')}:</h4>
         <ul>{warmapList}</ul>

@@ -19,7 +19,7 @@ export const Footer = memo(forwardRef((props, ref) => {
         </div>
         <address>
           <a href="mailto:tribal.diving.online@gmail.com">tribal.diving.online@gmail.com</a><br />
-          <a href="tel:+380934876382">+380934876382</a>
+          <a href="tel:+380635067796">+380 (63) 506-7796</a>
         </address>
       </div>
       <div className={styles.sitemap}>

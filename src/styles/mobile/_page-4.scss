@@ -1,5 +1,42 @@
 // MOBILE STYLES
 .page-4 {
+  padding: 1em 0.5em;
+
+  & > h3 {
+    text-align: center;
+    font-size: 1.7em;
+    margin: 0.5em 0 1em 0;
+  }
+
+  // .details-row {
+  //   margin: 0 1em;
+  //   display: flex;
+  //   flex-flow: row nowrap;
+  //   justify-content: stretch;
+
+  //   > .col-gutter {
+  //     flex: none;
+  //     width: 1em;
+  //   }
+
+  //   .details-col {
+  //     & > h4 {
+  //       font-size: 1.1em;
+  //       margin: 0 0 1em 0;
+  //     }
+
+  //     & > h4,
+  //     & > .details-list {
+  //       padding-left: 1em;
+  //     }
+  //   }
+  // }
+
+  // .summary {
+  //   font-size: 1em;
+  //   margin: 1em;
+  // }
+
   .wrapper {
     margin: 15vw 0;
     display: flex;

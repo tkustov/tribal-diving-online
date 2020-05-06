@@ -36,4 +36,23 @@
     font-size: 1em;
     margin: 1em;
   }
+
+  .wrapper {
+    margin: 15vw 0;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .price {
+    margin-bottom: 0.25em;
+    font-size: 8em;
+    color: #66732f;
+  }
+
+  .disclaimer {
+    padding: 1.5em;
+    font-size: 1.1em;
+    text-align: center;
+  }
 }

@@ -52,6 +52,13 @@
 
     h3 {
       font-size: 1.7em;
+      margin: 1em 0.5em;
+    }
+
+    .buy-buttons {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
     }
 
     .buy-btn {
@@ -61,6 +68,8 @@
       border-radius: 0.4em;
       color: #fff;
       text-decoration: none;
+      white-space: nowrap;
+      margin: 5px;
 
       &:hover,
       &:focus {

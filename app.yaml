@@ -1,0 +1,11 @@
+name: tribal-diving-online
+static_sites:
+- name: tdo-public
+  github:
+    repo: tkusto/tribal-diving-online
+    branch: deploy/do
+    deploy_on_push: true
+  build_command: npm run build
+  output_dir: /
+  routes:
+  - path: /

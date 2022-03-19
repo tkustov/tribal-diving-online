@@ -7,13 +7,13 @@ module.exports = {
     main: path.resolve(__dirname, 'src/index.js')
   },
   output: {
-    path: path.resolve(__dirname, 'assets'),
+    path: path.resolve(__dirname, 'dist'),
     filename: '[name].bundle.js',
-    publicPath: '/assets/'
+    publicPath: '/'
   },
   plugins: [
     new HtmlPlugin({
-      filename: '../index.html',
+      filename: 'index.html',
       template: path.resolve(__dirname, 'src/index.html')
     }),
     new MiniCssExtractPlugin({

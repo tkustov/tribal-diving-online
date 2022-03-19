@@ -61,6 +61,5 @@ typings/
 .next
 
 # project dependent
-.vscode
-# /index.html
-# /assets
+.vscode/
+/dist/
